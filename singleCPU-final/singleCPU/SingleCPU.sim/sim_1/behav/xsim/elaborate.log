@@ -1,0 +1,38 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cad97228ccc94e1383488580b6733256 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=33,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling module xil_defaultlib.PC_m
+Compiling module xil_defaultlib.NPC_m
+Compiling module xil_defaultlib.IMM_sel
+Compiling module xil_defaultlib.Jalr_sel
+Compiling module xil_defaultlib.fetch
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.SEXT
+Compiling module xil_defaultlib.Wd_sel
+Compiling module xil_defaultlib.compile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.alub_sel
+Compiling module xil_defaultlib.execute
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.miniRV
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.prgrom
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.dram
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.alltop
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav

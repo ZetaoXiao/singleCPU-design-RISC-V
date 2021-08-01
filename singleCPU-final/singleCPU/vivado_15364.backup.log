@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 23 18:15:31 2021
+# Process ID: 15364
+# Current directory: D:/vivado/2021/singlecpu2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14300 D:\vivado\2021\singlecpu2\SingleCPU.xpr
+# Log file: D:/vivado/2021/singlecpu2/vivado.log
+# Journal file: D:/vivado/2021/singlecpu2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado/2021/singlecpu2/SingleCPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 706.258 ; gain = 78.680
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 23 18:16:22 2021...

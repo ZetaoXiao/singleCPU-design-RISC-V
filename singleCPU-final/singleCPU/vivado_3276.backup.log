@@ -1,0 +1,1495 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 23 17:28:49 2021
+# Process ID: 3276
+# Current directory: D:/vivado/2021/singlecpu2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19868 D:\vivado\2021\singlecpu2\SingleCPU.xpr
+# Log file: D:/vivado/2021/singlecpu2/vivado.log
+# Journal file: D:/vivado/2021/singlecpu2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado/2021/singlecpu2/SingleCPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 702.945 ; gain = 77.992
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 23 17:30:37 2021...
+t for IP 'D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.xci' is already up-to-date
+[Fri Jul 23 17:29:15 2021] Launched synth_1...
+Run output will be captured here: D:/vivado/2021/singlecpu2/SingleCPU.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 813.512 ; gain = 55.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+ERROR: [Synth 8-448] named port connection 'alu_op' does not exist for instance 'execute_miniRV' of module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:75]
+ERROR: [Synth 8-448] named port connection 'alub_sel' does not exist for instance 'execute_miniRV' of module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:76]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+ERROR: [Synth 8-6156] failed synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+ERROR: [Synth 8-6156] failed synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 855.809 ; gain = 98.027
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+32 Infos, 3 Warnings, 0 Critical Warnings and 6 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 855.809 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+ERROR: [Synth 8-448] named port connection 'alub_sel' does not exist for instance 'execute_miniRV' of module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:76]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+ERROR: [Synth 8-6156] failed synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+ERROR: [Synth 8-6156] failed synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 875.465 ; gain = 19.656
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+32 Infos, 3 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+close_project
+open_project D:/vivado/2021/singlecpu2/SingleCPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 875.465 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+ERROR: [Synth 8-448] named port connection 'alub_sel' does not exist for instance 'execute_miniRV' of module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:76]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+ERROR: [Synth 8-6156] failed synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+ERROR: [Synth 8-6156] failed synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 897.852 ; gain = 22.387
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+32 Infos, 3 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 897.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+ERROR: [Synth 8-685] variable 'sext_op' should not be used in output port connection [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:88]
+ERROR: [Synth 8-6156] failed synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 903.309 ; gain = 5.457
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+33 Infos, 3 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 903.309 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+ERROR: [Synth 8-685] variable 'npc_op' should not be used in output port connection [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:90]
+ERROR: [Synth 8-6156] failed synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 903.348 ; gain = 0.039
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+33 Infos, 3 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+close_project
+open_project D:/vivado/2021/singlecpu2/SingleCPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 907.301 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+ERROR: [Synth 8-685] variable 'npc_op' should not be used in output port connection [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:90]
+ERROR: [Synth 8-6156] failed synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 934.836 ; gain = 27.535
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+33 Infos, 3 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 934.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+ERROR: [Synth 8-685] variable 'wd_sel' should not be used in output port connection [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:91]
+ERROR: [Synth 8-6156] failed synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 934.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+33 Infos, 3 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+close_project
+open_project D:/vivado/2021/singlecpu2/SingleCPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 938.895 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+ERROR: [Synth 8-685] variable 'wd_sel' should not be used in output port connection [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:91]
+ERROR: [Synth 8-6156] failed synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 938.895 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+33 Infos, 3 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+close_project
+open_project D:/vivado/2021/singlecpu2/SingleCPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 943.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-3848] Net wd in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:33]
+WARNING: [Synth 8-3848] Net rst in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:50]
+WARNING: [Synth 8-3848] Net npc_opc in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'miniRV' (14#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inst_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_mem' (15#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (16#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'clk' does not match port width (1) of module 'data_mem' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:74]
+WARNING: [Synth 8-3848] Net dram_rd in module/entity top does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3917] design top has port debug_wb_have_inst driven by constant 1
+WARNING: [Synth 8-3331] design fetch has unconnected port npc_op_i[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[31]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[30]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[29]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[28]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[27]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[26]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[25]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[24]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[23]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[22]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[21]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[20]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[19]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[18]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[17]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[16]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[15]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[14]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[13]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[12]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[11]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[10]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[9]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[8]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[7]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[6]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[5]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[4]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[3]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[1]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[0]
+WARNING: [Synth 8-3331] design miniRV has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 943.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin fetch_miniRV:reset to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:48]
+WARNING: [Synth 8-3295] tying undriven pin fetch_miniRV:npc_op_i[0] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:48]
+WARNING: [Synth 8-3295] tying undriven pin compile_miniRV:reset to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[31] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[30] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[29] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[28] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[27] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[26] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[25] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[24] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[23] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[22] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[21] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[20] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[19] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[18] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[17] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[16] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[15] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[14] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[13] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[12] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[11] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[10] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[9] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[8] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[7] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[6] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[5] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[4] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[3] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[2] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[1] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+WARNING: [Synth 8-3295] tying undriven pin miniRV_u:dram_rd[0] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:52]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 943.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 943.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem'
+INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 38 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1309.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2048 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1363.305 ; gain = 420.164
+50 Infos, 78 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 1363.305 ; gain = 421.508
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1387.227 ; gain = 1.301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-3848] Net wd in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:33]
+WARNING: [Synth 8-3848] Net rst in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:50]
+WARNING: [Synth 8-3848] Net npc_opc in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'miniRV' (14#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inst_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_mem' (15#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (16#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3917] design top has port debug_wb_have_inst driven by constant 1
+WARNING: [Synth 8-3331] design fetch has unconnected port npc_op_i[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[31]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[30]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[29]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[28]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[27]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[26]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[25]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[24]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[23]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[22]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[21]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[20]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[19]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[18]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[17]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[16]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[15]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[14]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[13]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[12]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[11]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[10]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[9]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[8]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[7]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[6]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[5]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[4]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[3]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[1]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[0]
+WARNING: [Synth 8-3331] design miniRV has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1422.777 ; gain = 36.852
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin fetch_miniRV:reset to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:48]
+WARNING: [Synth 8-3295] tying undriven pin fetch_miniRV:npc_op_i[0] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:48]
+WARNING: [Synth 8-3295] tying undriven pin compile_miniRV:reset to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1422.777 ; gain = 36.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1422.777 ; gain = 36.852
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem'
+INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 38 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 1506.957 ; gain = 121.031
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1506.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'alu_C_o' does not match port width (32) of module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:80]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-3848] Net wd in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:33]
+WARNING: [Synth 8-3848] Net rst in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:50]
+WARNING: [Synth 8-3848] Net npc_opc in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'miniRV' (14#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inst_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_mem' (15#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (16#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+WARNING: [Synth 8-3848] Net alu_c in module/entity top does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3917] design top has port debug_wb_have_inst driven by constant 1
+WARNING: [Synth 8-3331] design fetch has unconnected port npc_op_i[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[31]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[30]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[29]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[28]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[27]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[26]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[25]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[24]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[23]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[22]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[21]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[20]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[19]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[18]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[17]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[16]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[15]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[14]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[13]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[12]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[11]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[10]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[9]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[8]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[7]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[6]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[5]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[4]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[3]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[1]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[0]
+WARNING: [Synth 8-3331] design miniRV has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1506.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin fetch_miniRV:reset to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:48]
+WARNING: [Synth 8-3295] tying undriven pin fetch_miniRV:npc_op_i[0] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:48]
+WARNING: [Synth 8-3295] tying undriven pin compile_miniRV:reset to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:59]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1506.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1506.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem'
+INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 38 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1555.695 ; gain = 48.738
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1555.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:60]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-3848] Net wd in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:33]
+WARNING: [Synth 8-3848] Net rst in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:51]
+WARNING: [Synth 8-3848] Net npc_opc in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'miniRV' (14#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inst_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_mem' (15#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (16#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+WARNING: [Synth 8-3848] Net alu_c in module/entity top does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3917] design top has port debug_wb_have_inst driven by constant 1
+WARNING: [Synth 8-3331] design fetch has unconnected port npc_op_i[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[31]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[30]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[29]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[28]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[27]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[26]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[25]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[24]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[23]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[22]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[21]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[20]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[19]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[18]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[17]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[16]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[15]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[14]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[13]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[12]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[11]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[10]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[9]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[8]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[7]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[6]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[5]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[4]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[3]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[1]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[0]
+WARNING: [Synth 8-3331] design miniRV has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1555.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin fetch_miniRV:reset to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:49]
+WARNING: [Synth 8-3295] tying undriven pin fetch_miniRV:npc_op_i[0] to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:49]
+WARNING: [Synth 8-3295] tying undriven pin compile_miniRV:reset to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:60]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1555.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1555.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem'
+INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 38 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1586.691 ; gain = 30.996
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1586.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:60]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-3848] Net wd in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:33]
+WARNING: [Synth 8-3848] Net rst in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'miniRV' (14#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inst_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_mem' (15#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (16#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+WARNING: [Synth 8-3848] Net alu_c in module/entity top does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3917] design top has port debug_wb_have_inst driven by constant 1
+WARNING: [Synth 8-3331] design fetch has unconnected port npc_op_i[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[31]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[30]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[29]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[28]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[27]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[26]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[25]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[24]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[23]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[22]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[21]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[20]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[19]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[18]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[17]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[16]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[15]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[14]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[13]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[12]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[11]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[10]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[9]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[8]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[7]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[6]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[5]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[4]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[3]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[1]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[0]
+WARNING: [Synth 8-3331] design miniRV has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1586.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin fetch_miniRV:reset to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:49]
+WARNING: [Synth 8-3295] tying undriven pin compile_miniRV:reset to constant 0 [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:60]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1586.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1586.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem'
+INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 38 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1646.934 ; gain = 60.242
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1646.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'npc_op_i' does not match port width (2) of module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:51]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:60]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-3848] Net wd in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'miniRV' (14#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inst_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_mem' (15#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (16#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+WARNING: [Synth 8-3848] Net alu_c in module/entity top does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3917] design top has port debug_wb_have_inst driven by constant 1
+WARNING: [Synth 8-3331] design fetch has unconnected port npc_op_i[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[31]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[30]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[29]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[28]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[27]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[26]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[25]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[24]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[23]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[22]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[21]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[20]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[19]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[18]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[17]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[16]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[15]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[14]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[13]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[12]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[11]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[10]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[9]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[8]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[7]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[6]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[5]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[4]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[3]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[1]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1646.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1646.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1646.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem'
+INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 38 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1650.340 ; gain = 3.406
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1650.340 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:60]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-3848] Net wd in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'miniRV' (14#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inst_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_mem' (15#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (16#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+WARNING: [Synth 8-3848] Net alu_c in module/entity top does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3917] design top has port debug_wb_have_inst driven by constant 1
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[31]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[30]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[29]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[28]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[27]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[26]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[25]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[24]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[23]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[22]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[21]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[20]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[19]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[18]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[17]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[16]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[15]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[14]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[13]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[12]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[11]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[10]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[9]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[8]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[7]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[6]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[5]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[4]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[3]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[1]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1650.340 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1650.340 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1650.340 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem'
+INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 38 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1661.188 ; gain = 10.848
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1661.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'miniRV' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PC_m' (1#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NPC_m' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-226] default block is never used [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_m' (2#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/NPC.v:4]
+INFO: [Synth 8-6157] synthesizing module 'IMM_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMM_sel' (3#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/IMM_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Jalr_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Jalr_sel' (4#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Jalr_sel.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (5#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compile' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (6#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/RF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (7#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/SEXT.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Wd_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Wd_sel' (8#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/Wd_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'compile' (9#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/compile.v:23]
+WARNING: [Synth 8-350] instance 'compile_miniRV' of module 'compile' requires 13 connections, but only 12 given [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:60]
+INFO: [Synth 8-6157] synthesizing module 'execute' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alub_sel' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alub_sel' (11#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/alub_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (12#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000001101111 is unreachable [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4]
+WARNING: [Synth 8-3848] Net wd in module/entity miniRV does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'miniRV' (14#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/miniRV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inst_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_mem' (15#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (16#1) [D:/vivado/2021/singlecpu2/.Xil/Vivado-8864-DESKTOP-ABDT0UB/realtime/data_mem_stub.v:6]
+WARNING: [Synth 8-3848] Net alu_c in module/entity top does not have driver. [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [D:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3917] design top has port debug_wb_have_inst driven by constant 1
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[31]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[30]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[29]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[28]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[27]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[26]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[25]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[24]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[23]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[22]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[21]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[20]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[19]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[18]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[17]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[16]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[15]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[14]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[13]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[12]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[11]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[10]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[9]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[8]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[7]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[6]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[5]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[4]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[3]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[2]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[1]
+WARNING: [Synth 8-3331] design miniRV has unconnected port wd[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1661.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1661.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1661.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem'
+INFO: [Project 1-454] Reading design checkpoint 'd:/vivado/2021/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem'
+INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 38 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1733.434 ; gain = 72.246
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 23 18:15:23 2021...

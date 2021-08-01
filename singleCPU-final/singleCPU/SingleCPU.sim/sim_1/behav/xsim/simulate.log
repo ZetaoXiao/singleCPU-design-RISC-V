@@ -1,0 +1,5 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance test.alltop_u.cpuclk_top.inst.plle2_adv_inst are not same.

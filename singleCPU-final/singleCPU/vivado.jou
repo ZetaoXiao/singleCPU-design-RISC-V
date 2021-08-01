@@ -1,0 +1,162 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jul 25 17:40:22 2021
+# Process ID: 10452
+# Current directory: C:/Users/Administrator/Desktop/singlecpu2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13308 C:\Users\Administrator\Desktop\singlecpu2\SingleCPU.xpr
+# Log file: C:/Users/Administrator/Desktop/singlecpu2/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/singlecpu2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/new/alltop.v w ]
+add_files C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/new/alltop.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/new/display.v w ]
+add_files C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/new/display.v
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.xci] -no_script -reset -force -quiet
+remove_files  C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.xci
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.xci] -no_script -reset -force -quiet
+remove_files  C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.xci
+add_files -norecurse E:/download_test/synthesized_ip/dram/dram.dcp
+update_compile_order -fileset sources_1
+add_files -norecurse E:/download_test/synthesized_ip/prgrom/prgrom.dcp
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+file mkdir C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/constrs_1
+file mkdir C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/constrs_1/new
+close [ open C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/constrs_1/new/display.xdc w ]
+add_files -fileset constrs_1 C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/constrs_1/new/display.xdc
+close_design
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.runs/impl_1/alltop.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.runs/impl_1/alltop.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.runs/impl_1/alltop.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.runs/impl_1/alltop.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+export_ip_user_files -of_objects  [get_files E:/download_test/synthesized_ip/prgrom/prgrom.dcp] -no_script -reset -force -quiet
+remove_files  E:/download_test/synthesized_ip/prgrom/prgrom.dcp
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name prgrom -dir c:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip
+set_property -dict [list CONFIG.depth {16384} CONFIG.data_width {32} CONFIG.Component_Name {prgrom} CONFIG.memory_type {rom} CONFIG.coefficient_file {E:/download_test/inst_ram.coe}] [get_ips prgrom]
+generate_target {instantiation_template} [get_files c:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/prgrom_1/prgrom.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/prgrom_1/prgrom.xci]
+catch { config_ip_cache -export [get_ips -all prgrom] }
+export_ip_user_files -of_objects [get_files c:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/prgrom_1/prgrom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/prgrom_1/prgrom.xci]
+launch_runs -jobs 12 prgrom_synth_1
+export_simulation -of_objects [get_files c:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/prgrom_1/prgrom.xci] -directory C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.ip_user_files -ipstatic_source_dir C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sim_1/new/test.v w ]
+add_files -fileset sim_1 C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sim_1/new/test.v
+update_compile_order -fileset sim_1
+launch_simulation
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files E:/download_test/synthesized_ip/dram/dram.dcp] -no_script -reset -force -quiet
+remove_files  E:/download_test/synthesized_ip/dram/dram.dcp
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dram -dir c:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip
+set_property -dict [list CONFIG.depth {16384} CONFIG.data_width {32} CONFIG.Component_Name {dram} CONFIG.coefficient_file {E:/download_test/synthesized_ip/dram/data_ram.coe}] [get_ips dram]
+generate_target {instantiation_template} [get_files c:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/dram_1/dram.xci]
+generate_target all [get_files  c:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/dram_1/dram.xci]
+catch { config_ip_cache -export [get_ips -all dram] }
+export_ip_user_files -of_objects [get_files c:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/dram_1/dram.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/dram_1/dram.xci]
+launch_runs -jobs 12 dram_synth_1
+export_simulation -of_objects [get_files c:/Users/Administrator/Desktop/singlecpu2/SingleCPU.srcs/sources_1/ip/dram_1/dram.xci] -directory C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.ip_user_files -ipstatic_source_dir C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source cpuclk_sim.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source test.tcl
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+save_wave_config {C:/Users/Administrator/Desktop/singlecpu2/test_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/Administrator/Desktop/singlecpu2/test_behav.wcfg
+set_property xsim.view C:/Users/Administrator/Desktop/singlecpu2/test_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/Administrator/Desktop/singlecpu2/test_behav.wcfg
+source test.tcl
+run all
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.runs/impl_1/alltop.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/singlecpu2/SingleCPU.runs/impl_1/alltop.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
+close_sim

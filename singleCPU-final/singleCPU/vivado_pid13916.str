@@ -1,0 +1,1567 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 13916
+License: Customer
+
+Current time: 	Fri Jul 23 18:23:52 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 8 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/vivado/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/vivado/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	HP
+User home directory: C:/Users/HP
+User working directory: C:/Users/HP/Desktop/singlecpu3/singlecpu2
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/vivado/Vivado
+HDI_APPROOT: D:/vivado/Vivado/2018.3
+RDI_DATADIR: D:/vivado/Vivado/2018.3/data
+RDI_BINDIR: D:/vivado/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/HP/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/HP/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/HP/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/vivado/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/HP/Desktop/singlecpu3/singlecpu2/vivado.log
+Vivado journal file location: 	C:/Users/HP/Desktop/singlecpu3/singlecpu2/vivado.jou
+Engine tmp dir: 	C:/Users/HP/Desktop/singlecpu3/singlecpu2/.Xil/Vivado-13916-LAPTOP-DCESA515
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/vivado/Vivado/2018.3
+XILINX_SDK: D:/vivado/SDK/2018.3
+XILINX_VIVADO: D:/vivado/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/vivado/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 543 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1184 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\HP\Desktop\singlecpu3\singlecpu2\SingleCPU.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 549 MB. GUI used memory: 49 MB. Current time: 7/23/21, 6:23:55 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bx)
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bx)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CLOSE
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// Tcl Message: INFO: [Common 17-344] 'open_project' was cancelled 
+dismissDialog("Open Project"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 578 MB. GUI used memory: 46 MB. Current time: 7/23/21, 6:24:20 PM CST
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // x (w, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// Elapsed time: 15 seconds
+setFileChooser("C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.xpr");
+// Opening Vivado Project: C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 100 MB (+102900kb) [00:01:29]
+// [Engine Memory]: 615 MB (+493648kb) [00:01:29]
+// WARNING: HEventQueue.dispatchEvent() is taking  5493 ms.
+// [Engine Memory]: 687 MB (+43296kb) [00:01:32]
+// Tcl Message: open_project C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/vivado/2021/singlecpu2' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 53 MB. Current time: 7/23/21, 6:24:54 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 698.047 ; gain = 101.418 
+// Project name: SingleCPU; location: C:/Users/HP/Desktop/singlecpu3/singlecpu2; part: xc7a100tfgg484-1
+// 'i' command handler elapsed time: 27 seconds
+// Elapsed time: 12 seconds
+dismissDialog("Open Project"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tfgg484-1 Top: top 
+// HMemoryUtils.trashcanNow. Engine heap size: 752 MB. GUI used memory: 52 MB. Current time: 7/23/21, 6:25:10 PM CST
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 52 MB. Current time: 7/23/21, 6:25:25 PM CST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,055 MB. GUI used memory: 52 MB. Current time: 7/23/21, 6:25:33 PM CST
+// [Engine Memory]: 1,055 MB (+349060kb) [00:02:13]
+// [Engine Memory]: 1,132 MB (+26024kb) [00:02:15]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: D:/vivado/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 1.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2s
+// [GUI Memory]: 116 MB (+11377kb) [00:02:19]
+// Schematic: addNotify
+// [GUI Memory]: 126 MB (+3946kb) [00:02:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  5410 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 762.566 ; gain = 60.016 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83] INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114] INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66] INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 798.688 ; gain = 96.137 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 798.688 ; gain = 96.137 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 798.688 ; gain = 96.137 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1186.074 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 2048 instances were transformed.   RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1223.211 ; gain = 520.660 
+// Tcl Message: 50 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:37 . Memory (MB): peak = 1223.211 ; gain = 520.660 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 37 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+// [GUI Memory]: 140 MB (+8550kb) [00:03:22]
+// Elapsed time: 118 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// [Engine Memory]: 1,191 MB (+2387kb) [00:05:02]
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 236ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 96 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4); // B (D, cp)
+// PAPropertyPanels.initPanels (miniRV.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v)]", 5, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("miniRV.v", 273, 318); // cl (w, cp)
+selectCodeEditor("miniRV.v", 104, 162); // cl (w, cp)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1679 ms. Increasing delay to 5037 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  71438515 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3251 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 75 MB. Current time: 7/24/21, 2:39:33 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1254 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 8527 ms. Increasing delay to 25581 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 48 ms. Decreasing delay to 2048 ms.
+// Elapsed time: 72667 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 2); // k (j, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1050 ms.
+// RDIResource.RDIViews_PROPERTIES: Source File Properties: close view
+// Elapsed time: 831 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v)]", 6); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v), PC_fetch : PC_m (PC.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v), PC_fetch : PC_m (PC.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("PC.v", 104, 359); // cl (w, cp)
+selectCodeEditor("PC.v", 104, 359, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV.v", 3); // k (j, cp)
+selectCodeEditor("miniRV.v", 114, 256); // cl (w, cp)
+selectCodeEditor("miniRV.v", 114, 256, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PC.v", 5); // k (j, cp)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 4); // k (j, cp)
+selectCodeEditor("top.v", 90, 309); // cl (w, cp)
+selectCodeEditor("top.v", 90, 309, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("top.v", 100, 660); // cl (w, cp)
+// Elapsed time: 404 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PC.v", 5); // k (j, cp)
+selectCodeEditor("PC.v", 193, 452); // cl (w, cp)
+// Elapsed time: 44 seconds
+selectCodeEditor("PC.v", 134, 288); // cl (w, cp)
+selectCodeEditor("PC.v", 123, 218); // cl (w, cp)
+selectCodeEditor("PC.v", 270, 310); // cl (w, cp)
+// Elapsed time: 316 seconds
+selectCodeEditor("PC.v", 166, 412); // cl (w, cp)
+selectCodeEditor("PC.v", 163, 423); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("PC.v", 253, 300); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("PC.v", 140, 464); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 79 MB. Current time: 7/24/21, 3:09:33 PM CST
+// Elapsed time: 10 seconds
+selectCodeEditor("PC.v", 192, 472); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("PC.v", 91, 515); // cl (w, cp)
+selectCodeEditor("PC.v", 333, 546); // cl (w, cp)
+selectCodeEditor("PC.v", 485, 520); // cl (w, cp)
+selectCodeEditor("PC.v", 526, 521); // cl (w, cp)
+selectCodeEditor("PC.v", 278, 486); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 510ms to process. Increasing delay to 3000 ms.
+selectCodeEditor("PC.v", 1012, 370); // cl (w, cp)
+selectCodeEditor("PC.v", 496, 454); // cl (w, cp)
+selectCodeEditor("PC.v", 307, 541); // cl (w, cp)
+selectCodeEditor("PC.v", 237, 554); // cl (w, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("PC.v", 49, 302); // cl (w, cp)
+selectCodeEditor("PC.v", 140, 330); // cl (w, cp)
+typeControlKey((HResource) null, "PC.v", 'c'); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("PC.v", 228, 439); // cl (w, cp)
+selectCodeEditor("PC.v", 93, 471); // cl (w, cp)
+selectCodeEditor("PC.v", 302, 452); // cl (w, cp)
+typeControlKey((HResource) null, "PC.v", 'c'); // cl (w, cp)
+// Elapsed time: 292 seconds
+selectCodeEditor("PC.v", 353, 376); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PC.v", 5); // k (j, cp)
+// Elapsed time: 36 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV.v", 3); // k (j, cp)
+selectCodeEditor("miniRV.v", 177, 202); // cl (w, cp)
+// Elapsed time: 43 seconds
+selectCodeEditor("miniRV.v", 187, 335); // cl (w, cp)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1656 ms. Increasing delay to 3000 ms.
+// Elapsed time: 419 seconds
+selectCodeEditor("miniRV.v", 145, 497); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("miniRV.v", 175, 431); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("miniRV.v", 206, 521); // cl (w, cp)
+selectCodeEditor("miniRV.v", 193, 497); // cl (w, cp)
+selectCodeEditor("miniRV.v", 199, 478); // cl (w, cp)
+selectCodeEditor("miniRV.v", 195, 538); // cl (w, cp)
+selectCodeEditor("miniRV.v", 277, 536); // cl (w, cp)
+selectCodeEditor("miniRV.v", 197, 548); // cl (w, cp)
+selectCodeEditor("miniRV.v", 195, 408); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("miniRV.v", 170, 448); // cl (w, cp)
+selectCodeEditor("miniRV.v", 189, 335); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1253.945 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:83] INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:114] INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:66] INFO: [Synth 8-6155] done synthesizing module 'control' (13#1) [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/control.v:4] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1286.566 ; gain = 32.621 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1286.652 ; gain = 32.707 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1286.652 ; gain = 32.707 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem' 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 76 MB. Current time: 7/24/21, 3:26:42 PM CST
+// Engine heap size: 1,200 MB. GUI used memory: 77 MB. Current time: 7/24/21, 3:26:42 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  4047 ms.
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 55 MB. Current time: 7/24/21, 3:26:56 PM CST
+// Xgd.load filename: D:/vivado/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 0.6s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.3s
+// Schematic: addNotify
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (top.v) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  6219 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 38 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1302.668 ; gain = 48.723 
+// Elapsed time: 38 seconds
+dismissDialog("Reloading"); // bx (cp)
+// Elapsed time: 10 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // ax (aI)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 400 seconds
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aR, cp): FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aR, cp): TRUE
+// Elapsed time: 29 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v)]", 11); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v)]", 11, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v)]", 11, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v)]", 11, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("compile.v", 167, 536); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compile.v", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV.v", 3); // k (j, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("miniRV.v", 213, 563); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compile.v", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV.v", 3); // k (j, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 2); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (C, I)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1410.434 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1430.055 ; gain = 19.621 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1430.055 ; gain = 19.621 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1430.055 ; gain = 19.621 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem' 
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,200 MB. GUI used memory: 59 MB. Current time: 7/24/21, 3:36:18 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2901 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 59 MB. Current time: 7/24/21, 3:36:18 PM CST
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 59 MB. Current time: 7/24/21, 3:36:24 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.3s
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4986 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 38 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 1446.172 ; gain = 35.738 
+// Elapsed time: 21 seconds
+dismissDialog("Reloading"); // bx (cp)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV.v", 2); // k (j, cp)
+selectCodeEditor("miniRV.v", 189, 520); // cl (w, cp)
+typeControlKey((HResource) null, "miniRV.v", 'c'); // cl (w, cp)
+// Elapsed time: 176 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 143 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v)]", 11); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v), Wd_sel_compile : Wd_sel (Wd_sel.v)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v), Wd_sel_compile : Wd_sel (Wd_sel.v)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v), Wd_sel_compile : Wd_sel (Wd_sel.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Wd_sel.v", 87, 204); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compile.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compile.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Wd_sel.v", 6); // k (j, cp)
+selectCodeEditor("Wd_sel.v", 244, 491); // cl (w, cp)
+selectCodeEditor("Wd_sel.v", 250, 472); // cl (w, cp)
+selectCodeEditor("Wd_sel.v", 157, 194); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compile.v", 5); // k (j, cp)
+selectCodeEditor("compile.v", 101, 515); // cl (w, cp)
+selectCodeEditor("compile.v", 112, 544); // cl (w, cp)
+selectCodeEditor("compile.v", 96, 570); // cl (w, cp)
+selectCodeEditor("compile.v", 111, 586); // cl (w, cp)
+selectCodeEditor("compile.v", 123, 608); // cl (w, cp)
+selectCodeEditor("compile.v", 71, 631); // cl (w, cp)
+selectCodeEditor("compile.v", 448, 583); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  2403 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2744 ms.
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Wd_sel.v", 6); // k (j, cp)
+selectCodeEditor("Wd_sel.v", 209, 207); // cl (w, cp)
+selectCodeEditor("Wd_sel.v", 192, 199); // cl (w, cp)
+selectCodeEditor("Wd_sel.v", 257, 478); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compile.v", 5); // k (j, cp)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Wd_sel.v", 6); // k (j, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1366 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compile.v", 5); // k (j, cp)
+selectCodeEditor("compile.v", 168, 641); // cl (w, cp)
+selectCodeEditor("compile.v", 181, 634); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Wd_sel.v", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 105 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compile.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Wd_sel.v", 6); // k (j, cp)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compile.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Wd_sel.v", 6); // k (j, cp)
+selectCodeEditor("Wd_sel.v", 162, 196); // cl (w, cp)
+selectCodeEditor("Wd_sel.v", 99, 312); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_START
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1470.770 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1478.410 ; gain = 7.641 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1478.414 ; gain = 7.645 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1478.414 ; gain = 7.645 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem' 
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,200 MB. GUI used memory: 117 MB. Current time: 7/24/21, 3:47:52 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2849 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 117 MB. Current time: 7/24/21, 3:47:52 PM CST
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 61 MB. Current time: 7/24/21, 3:47:59 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.2s
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4396 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 6 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 1574.566 ; gain = 103.797 
+// Elapsed time: 22 seconds
+dismissDialog("Reloading"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// PAPropertyPanels.initPanels (sext_op) elapsed time: 0.3s
+// [GUI Memory]: 149 MB (+1393kb) [21:29:20]
+// Elapsed time: 291 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Wd_sel.v", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 665 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "compile.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PC.v", 4); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), control_miniRV : control (control.v)]", 16, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), control_miniRV : control (control.v)]", 16, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("control.v", 851, 184); // cl (w, cp)
+selectCodeEditor("control.v", 850, 219); // cl (w, cp)
+selectCodeEditor("control.v", 320, 378); // cl (w, cp)
+selectCodeEditor("control.v", 462, 416); // cl (w, cp)
+selectCodeEditor("control.v", 335, 423); // cl (w, cp)
+selectCodeEditor("control.v", 454, 431); // cl (w, cp)
+selectCodeEditor("control.v", 433, 545); // cl (w, cp)
+selectCodeEditor("control.v", 399, 167); // cl (w, cp)
+// Elapsed time: 33 seconds
+selectCodeEditor("control.v", 123, 145); // cl (w, cp)
+selectCodeEditor("control.v", 371, 184); // cl (w, cp)
+selectCodeEditor("control.v", 149, 175); // cl (w, cp)
+selectCodeEditor("control.v", 298, 180); // cl (w, cp)
+selectCodeEditor("control.v", 149, 178); // cl (w, cp)
+selectCodeEditor("control.v", 238, 251); // cl (w, cp)
+selectCodeEditor("control.v", 371, 171); // cl (w, cp)
+selectCodeEditor("control.v", 395, 206); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("control.v", 152, 175); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("control.v", 236, 229); // cl (w, cp)
+selectCodeEditor("control.v", 149, 130); // cl (w, cp)
+selectCodeEditor("control.v", 161, 100); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("control.v", 445, 314); // cl (w, cp)
+selectCodeEditor("control.v", 445, 314); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 458, 312); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'v'); // cl (w, cp)
+selectCodeEditor("control.v", 129, 325); // cl (w, cp)
+selectCodeEditor("control.v", 156, 331); // cl (w, cp)
+selectCodeEditor("control.v", 175, 329); // cl (w, cp)
+selectCodeEditor("control.v", 408, 337); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 57 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 7); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 7); // k (j, cp)
+selectCodeEditor("control.v", 620, 448); // cl (w, cp)
+selectCodeEditor("control.v", 424, 539); // cl (w, cp)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1604.688 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1604.762 ; gain = 0.074 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1605.996 ; gain = 1.309 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1605.996 ; gain = 1.309 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem' 
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,200 MB. GUI used memory: 66 MB. Current time: 7/24/21, 4:09:14 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  3444 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 66 MB. Current time: 7/24/21, 4:09:14 PM CST
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 64 MB. Current time: 7/24/21, 4:09:21 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1s
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4651 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 6 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1622.105 ; gain = 19.223 
+// Elapsed time: 21 seconds
+dismissDialog("Reloading"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// PAPropertyPanels.initPanels (<const1>) elapsed time: 0.9s
+// WARNING: HEventQueue.dispatchEvent() is taking  1243 ms.
+// Elapsed time: 41 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 7); // k (j, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("control.v", 722, 282); // cl (w, cp)
+selectCodeEditor("control.v", 446, 471); // cl (w, cp)
+selectCodeEditor("control.v", 446, 471, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("control.v", 485, 463); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+// Elapsed time: 227 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 49 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("param.v", 72, 563); // cl (w, cp)
+selectCodeEditor("param.v", 307, 561); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 227 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 7); // k (j, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("control.v", 216, 242); // cl (w, cp)
+selectCodeEditor("control.v", 371, 250); // cl (w, cp)
+selectCodeEditor("control.v", 312, 241); // cl (w, cp)
+selectCodeEditor("control.v", 365, 239); // cl (w, cp)
+selectCodeEditor("control.v", 301, 243); // cl (w, cp)
+selectCodeEditor("control.v", 496, 246); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "param.v", 8); // k (j, cp)
+selectCodeEditor("param.v", 95, 150); // cl (w, cp)
+selectCodeEditor("param.v", 248, 172); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 7); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "param.v", 8); // k (j, cp)
+selectCodeEditor("param.v", 206, 422); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 7); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "param.v", 8); // k (j, cp)
+// Elapsed time: 130 seconds
+selectCodeEditor("param.v", 237, 422); // cl (w, cp)
+selectCodeEditor("param.v", 266, 418); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Wd_sel.v", 6); // k (j, cp)
+selectCodeEditor("Wd_sel.v", 218, 407); // cl (w, cp)
+selectCodeEditor("Wd_sel.v", 230, 417); // cl (w, cp)
+selectCodeEditor("Wd_sel.v", 224, 428); // cl (w, cp)
+selectCodeEditor("Wd_sel.v", 461, 421); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 251 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), execute_miniRV : execute (execute.v)]", 16); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), execute_miniRV : execute (execute.v), alub_sel_execute : alub_sel (alub_sel.v)]", 18, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), execute_miniRV : execute (execute.v), alub_sel_execute : alub_sel (alub_sel.v)]", 18, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("alub_sel.v", 274, 229); // cl (w, cp)
+// Elapsed time: 57 seconds
+selectCodeEditor("alub_sel.v", 73, 222); // cl (w, cp)
+selectCodeEditor("alub_sel.v", 250, 261); // cl (w, cp)
+selectCodeEditor("alub_sel.v", 362, 217); // cl (w, cp)
+selectCodeEditor("alub_sel.v", 436, 287); // cl (w, cp)
+selectCodeEditor("alub_sel.v", 129, 129); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), execute_miniRV : execute (execute.v)]", 16, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), execute_miniRV : execute (execute.v)]", 16, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("execute.v", 167, 614); // cl (w, cp)
+selectCodeEditor("execute.v", 136, 246); // cl (w, cp)
+selectCodeEditor("execute.v", 248, 238); // cl (w, cp)
+// Elapsed time: 93 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 7); // k (j, cp)
+selectCodeEditor("control.v", 322, 629); // cl (w, cp)
+selectCodeEditor("control.v", 412, 623); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "param.v", 8); // k (j, cp)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PC.v", 4); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 3); // k (j, cp)
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+dismissDialog("Text Changed"); // k (cp)
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// [GUI Memory]: 158 MB (+1904kb) [22:07:38]
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1622.105 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1622.105 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1622.105 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1622.105 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem' 
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,200 MB. GUI used memory: 70 MB. Current time: 7/24/21, 4:31:17 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  4190 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 69 MB. Current time: 7/24/21, 4:31:17 PM CST
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 69 MB. Current time: 7/24/21, 4:31:24 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1s
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  5818 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 6 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:23 . Memory (MB): peak = 1691.734 ; gain = 69.629 
+// Elapsed time: 23 seconds
+dismissDialog("Reloading"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV.v", 2); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 5, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 31 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "execute.v", 8); // k (j, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("execute.v", 765, 427); // cl (w, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 5); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v), SEXT_compile : SEXT (SEXT.v)]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v), SEXT_compile : SEXT (SEXT.v)]", 10, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("SEXT.v", 339, 473); // cl (w, cp)
+selectCodeEditor("SEXT.v", 517, 475); // cl (w, cp)
+selectCodeEditor("SEXT.v", 466, 475); // cl (w, cp)
+selectCodeEditor("SEXT.v", 588, 475); // cl (w, cp)
+// Elapsed time: 183 seconds
+selectCodeEditor("SEXT.v", 463, 478); // cl (w, cp)
+selectCodeEditor("SEXT.v", 354, 475); // cl (w, cp)
+selectCodeEditor("SEXT.v", 413, 474); // cl (w, cp)
+selectCodeEditor("SEXT.v", 443, 476); // cl (w, cp)
+selectCodeEditor("SEXT.v", 447, 476); // cl (w, cp)
+selectCodeEditor("SEXT.v", 466, 515); // cl (w, cp)
+selectCodeEditor("SEXT.v", 352, 470); // cl (w, cp)
+selectCodeEditor("SEXT.v", 463, 475); // cl (w, cp)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2871 ms. Increasing delay to 8613 ms.
+// Elapsed time: 216 seconds
+selectCodeEditor("SEXT.v", 548, 432); // cl (w, cp)
+selectCodeEditor("SEXT.v", 219, 381); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("SEXT.v", 242, 480); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("SEXT.v", 153, 474); // cl (w, cp)
+selectCodeEditor("SEXT.v", 20, 471); // cl (w, cp)
+// Elapsed time: 48 seconds
+selectCodeEditor("SEXT.v", 170, 474); // cl (w, cp)
+selectCodeEditor("SEXT.v", 310, 466); // cl (w, cp)
+selectCodeEditor("SEXT.v", 432, 478); // cl (w, cp)
+selectCodeEditor("SEXT.v", 436, 473); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("SEXT.v", 182, 431); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("SEXT.v", 367, 433); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("SEXT.v", 264, 236); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1691.734 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1691.734 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1691.734 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1691.734 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem' 
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,200 MB. GUI used memory: 111 MB. Current time: 7/24/21, 4:43:59 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  3999 ms.
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem' 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 74 MB. Current time: 7/24/21, 4:44:00 PM CST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 72 MB. Current time: 7/24/21, 4:44:08 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.5s
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  6895 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 6 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 1691.734 ; gain = 0.000 
+// Elapsed time: 27 seconds
+dismissDialog("Reloading"); // bx (cp)
+selectCodeEditor("SEXT.v", 532, 544); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "param.v", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alub_sel.v", 7); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SEXT.v", 9); // k (j, cp)
+selectCodeEditor("SEXT.v", 1018, 476); // cl (w, cp)
+typeControlKey((HResource) null, "SEXT.v", 'c'); // cl (w, cp)
+// Elapsed time: 276 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 332 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "param.v", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SEXT.v", 9); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v)]", 7, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v), Jal_selr_fetch : Jalr_sel (Jalr_sel.v)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v), Jal_selr_fetch : Jalr_sel (Jalr_sel.v)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("Jalr_sel.v", 211, 174); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("Jalr_sel.v", 330, 169); // cl (w, cp)
+// Elapsed time: 121 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v), PC_fetch : PC_m (PC.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v), PC_fetch : PC_m (PC.v)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v), NPC_fetch : NPC_m (NPC.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v), NPC_fetch : NPC_m (NPC.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("NPC.v", 181, 314); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v), IMM_sel_fetch : IMM_sel (IMM_sel.v)]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v), IMM_sel_fetch : IMM_sel (IMM_sel.v)]", 10, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("IMM_sel.v", 264, 225); // cl (w, cp)
+selectCodeEditor("IMM_sel.v", 242, 220); // cl (w, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+dismissDialog("Text Changed"); // k (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 98 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IMM_sel.v", 11); // k (j, cp)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 5); // k (j, cp)
+selectCodeEditor("control.v", 283, 488); // cl (w, cp)
+selectCodeEditor("control.v", 322, 471); // cl (w, cp)
+selectCodeEditor("control.v", 203, 433); // cl (w, cp)
+selectCodeEditor("control.v", 232, 433); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IMM_sel.v", 11); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 5); // k (j, cp)
+selectCodeEditor("control.v", 391, 429); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IMM_sel.v", 11); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 5); // k (j, cp)
+selectCodeEditor("control.v", 319, 432); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("control.v", 430, 468); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("control.v", 953, 331); // cl (w, cp)
+// Elapsed time: 125 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 312 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Wd_sel.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 60 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Wd_sel.v", 4); // k (j, cp)
+selectCodeEditor("Wd_sel.v", 289, 469); // cl (w, cp)
+selectCodeEditor("Wd_sel.v", 252, 431); // cl (w, cp)
+selectCodeEditor("Wd_sel.v", 252, 431, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Wd_sel.v", 336, 420); // cl (w, cp)
+selectCodeEditor("Wd_sel.v", 336, 420, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Wd_sel.v", 241, 420); // cl (w, cp)
+selectCodeEditor("Wd_sel.v", 241, 420, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("Wd_sel.v", 167, 379); // cl (w, cp)
+selectCodeEditor("Wd_sel.v", 167, 379, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 23 seconds
+selectCodeEditor("Wd_sel.v", 1007, 302); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (pc4_o) elapsed time: 0.5s
+// Elapsed time: 134 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "NPC.v", 10); // k (j, cp)
+selectCodeEditor("NPC.v", 196, 433); // cl (w, cp)
+selectCodeEditor("NPC.v", 270, 486); // cl (w, cp)
+selectCodeEditor("NPC.v", 287, 469); // cl (w, cp)
+selectCodeEditor("NPC.v", 296, 505); // cl (w, cp)
+selectCodeEditor("NPC.v", 286, 505); // cl (w, cp)
+selectCodeEditor("NPC.v", 350, 508); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("NPC.v", 286, 545); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("NPC.v", 448, 542); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("NPC.v", 458, 522); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 105 MB. Current time: 7/24/21, 5:14:11 PM CST
+// Elapsed time: 42 seconds
+selectCodeEditor("NPC.v", 321, 535); // cl (w, cp)
+selectCodeEditor("NPC.v", 396, 532); // cl (w, cp)
+// Elapsed time: 79 seconds
+selectCodeEditor("NPC.v", 178, 387); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV.v", 2); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 76 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 4); // k (j, cp)
+selectCodeEditor("control.v", 821, 428); // cl (w, cp)
+selectCodeEditor("control.v", 121, 270); // cl (w, cp)
+// [GUI Memory]: 166 MB (+18kb) [22:56:38]
+// Elapsed time: 131 seconds
+selectCodeEditor("control.v", 432, 414); // cl (w, cp)
+selectCodeEditor("control.v", 370, 447); // cl (w, cp)
+selectCodeEditor("control.v", 344, 474); // cl (w, cp)
+// Elapsed time: 81 seconds
+selectCodeEditor("control.v", 386, 607); // cl (w, cp)
+// Elapsed time: 109 seconds
+selectCodeEditor("control.v", 471, 513); // cl (w, cp)
+selectCodeEditor("control.v", 525, 419); // cl (w, cp)
+selectCodeEditor("control.v", 406, 325); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 85 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IMM_sel.v", 10); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "NPC.v", 9); // k (j, cp)
+selectCodeEditor("NPC.v", 234, 345); // cl (w, cp)
+selectCodeEditor("NPC.v", 214, 340); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("NPC.v", 226, 336); // cl (w, cp)
+selectCodeEditor("NPC.v", 238, 334); // cl (w, cp)
+selectCodeEditor("NPC.v", 225, 336); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 4); // k (j, cp)
+// Elapsed time: 35 seconds
+selectCodeEditor("control.v", 372, 506); // cl (w, cp)
+selectCodeEditor("control.v", 395, 589); // cl (w, cp)
+selectCodeEditor("control.v", 393, 616); // cl (w, cp)
+selectCodeEditor("control.v", 393, 616, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("control.v", 528, 565); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("control.v", 371, 581); // cl (w, cp)
+selectCodeEditor("control.v", 411, 508); // cl (w, cp)
+selectCodeEditor("control.v", 269, 574); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("control.v", 800, 379); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("control.v", 210, 267); // cl (w, cp)
+// Elapsed time: 57 seconds
+selectCodeEditor("control.v", 167, 246); // cl (w, cp)
+// Elapsed time: 59 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "NPC.v", 9); // k (j, cp)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fetch.v", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SEXT.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 4); // k (j, cp)
+selectCodeEditor("control.v", 127, 562); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 166, 131); // cl (w, cp)
+selectCodeEditor("control.v", 166, 129); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'v'); // cl (w, cp)
+selectCodeEditor("control.v", 362, 135); // cl (w, cp)
+selectCodeEditor("control.v", 270, 639); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 209, 218); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'v'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "param.v", 11); // k (j, cp)
+selectCodeEditor("param.v", 68, 218); // cl (w, cp)
+typeControlKey((HResource) null, "param.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 4); // k (j, cp)
+typeControlKey((HResource) null, "control.v", 'v'); // cl (w, cp)
+selectCodeEditor("control.v", 389, 221); // cl (w, cp)
+selectCodeEditor("control.v", 309, 407); // cl (w, cp)
+selectCodeEditor("control.v", 380, 474); // cl (w, cp)
+selectCodeEditor("control.v", 124, 492); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 229, 504); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'v'); // cl (w, cp)
+selectCodeEditor("control.v", 272, 473); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 289, 498); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'v'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "param.v", 11); // k (j, cp)
+selectCodeEditor("param.v", 72, 238); // cl (w, cp)
+typeControlKey((HResource) null, "param.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 4); // k (j, cp)
+selectCodeEditor("control.v", 306, 502); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'v'); // cl (w, cp)
+selectCodeEditor("control.v", 537, 496); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("control.v", 96, 546); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+// Elapsed time: 422 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1783.137 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1783.137 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1783.137 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1783.137 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem' 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 93 MB. Current time: 7/24/21, 5:39:19 PM CST
+// Engine heap size: 1,200 MB. GUI used memory: 94 MB. Current time: 7/24/21, 5:39:19 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  5289 ms.
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 78 MB. Current time: 7/24/21, 5:39:26 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  6477 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 6 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1911.125 ; gain = 127.988 
+// Elapsed time: 27 seconds
+dismissDialog("Reloading"); // bx (cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("control.v", 256, 521); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "NPC.v", 9); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,205 MB. GUI used memory: 103 MB. Current time: 7/24/21, 5:40:52 PM CST
+// Elapsed time: 35 seconds
+selectCodeEditor("NPC.v", 341, 298); // cl (w, cp)
+selectCodeEditor("NPC.v", 182, 203); // cl (w, cp)
+selectCodeEditor("NPC.v", 170, 195); // cl (w, cp)
+selectCodeEditor("NPC.v", 170, 195); // cl (w, cp)
+selectCodeEditor("NPC.v", 221, 198); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 4); // k (j, cp)
+// Elapsed time: 36 seconds
+selectCodeEditor("control.v", 415, 204); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "NPC.v", 9); // k (j, cp)
+selectCodeEditor("NPC.v", 314, 255); // cl (w, cp)
+selectCodeEditor("NPC.v", 292, 240); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("NPC.v", 310, 249); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("NPC.v", 425, 242); // cl (w, cp)
+// Elapsed time: 40 seconds
+selectCodeEditor("NPC.v", 295, 236); // cl (w, cp)
+selectCodeEditor("NPC.v", 511, 267); // cl (w, cp)
+selectCodeEditor("NPC.v", 219, 242); // cl (w, cp)
+// Elapsed time: 54 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 4); // k (j, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("control.v", 208, 199); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 230, 225); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'v'); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("control.v", 453, 137); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("control.v", 336, 59); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+// Elapsed time: 167 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), execute_miniRV : execute (execute.v)]", 16); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), execute_miniRV : execute (execute.v)]", 16); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v), SEXT_compile : SEXT (SEXT.v)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v), SEXT_compile : SEXT (SEXT.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("SEXT.v", 417, 437); // cl (w, cp)
+selectCodeEditor("SEXT.v", 373, 541); // cl (w, cp)
+// Elapsed time: 164 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2011.879 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2011.879 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2011.879 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2011.879 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem' 
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,205 MB. GUI used memory: 84 MB. Current time: 7/24/21, 5:51:37 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  5590 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,205 MB. GUI used memory: 83 MB. Current time: 7/24/21, 5:51:37 PM CST
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,205 MB. GUI used memory: 82 MB. Current time: 7/24/21, 5:51:44 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  6171 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 6 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 2011.879 ; gain = 0.000 
+// Elapsed time: 25 seconds
+dismissDialog("Reloading"); // bx (cp)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 776 ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 1081 seconds
+selectCodeEditor("SEXT.v", 621, 428); // cl (w, cp)
+selectCodeEditor("SEXT.v", 630, 445); // cl (w, cp)
+// Elapsed time: 96 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 333 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Jalr_sel.v", 7); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "NPC.v", 7); // k (j, cp)
+selectCodeEditor("NPC.v", 677, 223); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v), Wd_sel_compile : Wd_sel (Wd_sel.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v), Wd_sel_compile : Wd_sel (Wd_sel.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 4); // k (j, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("control.v", 317, 310); // cl (w, cp)
+selectCodeEditor("control.v", 345, 307); // cl (w, cp)
+// Elapsed time: 92 seconds
+selectCodeEditor("control.v", 369, 339); // cl (w, cp)
+selectCodeEditor("control.v", 364, 315); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "param.v", 8); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 4); // k (j, cp)
+selectCodeEditor("control.v", 488, 305); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("control.v", 365, 345); // cl (w, cp)
+selectCodeEditor("control.v", 371, 322); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,205 MB. GUI used memory: 109 MB. Current time: 7/24/21, 6:21:47 PM CST
+// Elapsed time: 181 seconds
+selectCodeEditor("control.v", 314, 313); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("control.v", 441, 213); // cl (w, cp)
+// Elapsed time: 161 seconds
+selectCodeEditor("control.v", 193, 176); // cl (w, cp)
+// Elapsed time: 54 seconds
+selectCodeEditor("control.v", 303, 198); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("control.v", 298, 196); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("control.v", 295, 149); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("control.v", 302, 196); // cl (w, cp)
+selectCodeEditor("control.v", 293, 196); // cl (w, cp)
+selectCodeEditor("control.v", 343, 196); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("control.v", 296, 173); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 298, 221); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 298, 243); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+// Elapsed time: 139 seconds
+selectCodeEditor("control.v", 315, 250); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("control.v", 188, 225); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("control.v", 171, 163); // cl (w, cp)
+selectCodeEditor("control.v", 274, 125); // cl (w, cp)
+// Elapsed time: 613 seconds
+selectCodeEditor("control.v", 366, 612); // cl (w, cp)
+// Elapsed time: 83 seconds
+selectCodeEditor("control.v", 460, 425); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("control.v", 323, 429); // cl (w, cp)
+selectCodeEditor("control.v", 328, 426); // cl (w, cp)
+selectCodeEditor("control.v", 285, 408); // cl (w, cp)
+selectCodeEditor("control.v", 204, 410); // cl (w, cp)
+selectCodeEditor("control.v", 164, 364); // cl (w, cp)
+selectCodeEditor("control.v", 217, 402); // cl (w, cp)
+// Elapsed time: 44 seconds
+selectCodeEditor("control.v", 370, 426); // cl (w, cp)
+selectCodeEditor("control.v", 193, 406); // cl (w, cp)
+selectCodeEditor("control.v", 215, 427); // cl (w, cp)
+// Elapsed time: 124 seconds
+selectCodeEditor("control.v", 373, 431); // cl (w, cp)
+selectCodeEditor("control.v", 373, 425); // cl (w, cp)
+selectCodeEditor("control.v", 370, 468); // cl (w, cp)
+selectCodeEditor("control.v", 452, 473); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("control.v", 312, 270); // cl (w, cp)
+selectCodeEditor("control.v", 324, 267); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("control.v", 401, 201); // cl (w, cp)
+selectCodeEditor("control.v", 311, 200); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("control.v", 312, 377); // cl (w, cp)
+selectCodeEditor("control.v", 461, 404); // cl (w, cp)
+// Elapsed time: 43 seconds
+selectCodeEditor("control.v", 206, 149); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 445, 522); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("control.v", 343, 313); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 396, 352); // cl (w, cp)
+selectCodeEditor("control.v", 355, 312); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 221, 474); // cl (w, cp)
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "control.v", 'v'); // cl (w, cp)
+selectCodeEditor("control.v", 495, 619); // cl (w, cp)
+selectCodeEditor("control.v", 349, 549); // cl (w, cp)
+selectCodeEditor("control.v", 338, 176); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 448, 415); // cl (w, cp)
+selectCodeEditor("control.v", 460, 398); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'v'); // cl (w, cp)
+selectCodeEditor("control.v", 240, 422); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("control.v", 336, 103); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 382, 300); // cl (w, cp)
+selectCodeEditor("control.v", 392, 286); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'v'); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("control.v", 122, 495); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("control.v", 339, 545); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,205 MB. GUI used memory: 108 MB. Current time: 7/24/21, 6:51:47 PM CST
+// Elapsed time: 122 seconds
+selectCodeEditor("control.v", 411, 476); // cl (w, cp)
+selectCodeEditor("control.v", 376, 515); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("control.v", 429, 527); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("control.v", 544, 454, false, true, false, false, false); // cl (w, cp) - Control Key
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 10 seconds
+selectCodeEditor("control.v", 206, 614); // cl (w, cp)
+selectCodeEditor("control.v", 939, 502); // cl (w, cp)
+selectCodeEditor("control.v", 324, 353); // cl (w, cp)
+selectCodeEditor("control.v", 938, 359); // cl (w, cp)
+selectCodeEditor("control.v", 1130, 310); // cl (w, cp)
+selectCodeEditor("control.v", 1123, 286); // cl (w, cp)
+selectCodeEditor("control.v", 276, 620); // cl (w, cp)
+selectCodeEditor("control.v", 227, 614); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+selectCodeEditor("control.v", 601, 244); // cl (w, cp)
+selectCodeEditor("control.v", 249, 170); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'v'); // cl (w, cp)
+selectCodeEditor("control.v", 188, 195); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("control.v", 348, 220); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'v'); // cl (w, cp)
+selectCodeEditor("control.v", 188, 245); // cl (w, cp)
+selectCodeEditor("control.v", 488, 520); // cl (w, cp)
+selectCodeEditor("control.v", 406, 536); // cl (w, cp)
+selectCodeEditor("control.v", 366, 537); // cl (w, cp)
+selectCodeEditor("control.v", 458, 509); // cl (w, cp)
+selectCodeEditor("control.v", 208, 495); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("control.v", 888, 341); // cl (w, cp)
+selectCodeEditor("control.v", 339, 324); // cl (w, cp)
+selectCodeEditor("control.v", 436, 280); // cl (w, cp)
+selectCodeEditor("control.v", 414, 269); // cl (w, cp)
+selectCodeEditor("control.v", 282, 241); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("control.v", 534, 274); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("control.v", 421, 266); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+// Elapsed time: 44 seconds
+selectCodeEditor("control.v", 565, 342); // cl (w, cp)
+selectCodeEditor("control.v", 122, 634); // cl (w, cp)
+selectCodeEditor("control.v", 517, 250); // cl (w, cp)
+selectCodeEditor("control.v", 109, 536); // cl (w, cp)
+typeControlKey((HResource) null, "control.v", 'c'); // cl (w, cp)
+// Elapsed time: 613 seconds
+selectCodeEditor("control.v", 465, 380); // cl (w, cp)
+selectCodeEditor("control.v", 756, 144); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("control.v", 132, 218); // cl (w, cp)
+selectCodeEditor("control.v", 171, 243); // cl (w, cp)
+selectCodeEditor("control.v", 218, 266); // cl (w, cp)
+selectCodeEditor("control.v", 289, 316); // cl (w, cp)
+selectCodeEditor("control.v", 194, 286); // cl (w, cp)
+selectCodeEditor("control.v", 283, 301); // cl (w, cp)
+selectCodeEditor("control.v", 367, 309); // cl (w, cp)
+selectCodeEditor("control.v", 310, 311); // cl (w, cp)
+selectCodeEditor("control.v", 142, 222); // cl (w, cp)
+selectCodeEditor("control.v", 138, 221); // cl (w, cp)
+selectCodeEditor("control.v", 191, 226); // cl (w, cp)
+selectCodeEditor("control.v", 134, 219); // cl (w, cp)
+selectCodeEditor("control.v", 189, 233); // cl (w, cp)
+selectCodeEditor("control.v", 222, 286); // cl (w, cp)
+selectCodeEditor("control.v", 212, 284); // cl (w, cp)
+selectCodeEditor("control.v", 280, 287); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("control.v", 375, 288); // cl (w, cp)
+selectCodeEditor("control.v", 191, 263); // cl (w, cp)
+selectCodeEditor("control.v", 375, 284); // cl (w, cp)
+selectCodeEditor("control.v", 391, 337); // cl (w, cp)
+selectCodeEditor("control.v", 372, 288); // cl (w, cp)
+selectCodeEditor("control.v", 425, 314); // cl (w, cp)
+// Elapsed time: 59 seconds
+selectCodeEditor("control.v", 284, 170); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("control.v", 267, 271); // cl (w, cp)
+selectCodeEditor("control.v", 280, 267); // cl (w, cp)
+selectCodeEditor("control.v", 336, 267); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("control.v", 336, 267); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("control.v", 364, 282); // cl (w, cp)
+selectCodeEditor("control.v", 369, 282); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("control.v", 376, 428); // cl (w, cp)
+selectCodeEditor("control.v", 395, 298); // cl (w, cp)
+selectCodeEditor("control.v", 371, 268); // cl (w, cp)
+selectCodeEditor("control.v", 288, 246); // cl (w, cp)
+selectCodeEditor("control.v", 330, 253); // cl (w, cp)
+selectCodeEditor("control.v", 378, 260); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("control.v", 573, 496); // cl (w, cp)
+// Elapsed time: 69 seconds
+selectCodeEditor("control.v", 505, 388); // cl (w, cp)
+selectCodeEditor("control.v", 553, 293); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2011.879 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2011.879 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2011.879 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2011.879 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem' 
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,205 MB. GUI used memory: 88 MB. Current time: 7/24/21, 7:14:29 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  4708 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,205 MB. GUI used memory: 87 MB. Current time: 7/24/21, 7:14:29 PM CST
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem' 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 368ms to process. Increasing delay to 2000 ms.
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,205 MB. GUI used memory: 86 MB. Current time: 7/24/21, 7:14:36 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.1s
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  5131 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 6 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 2011.879 ; gain = 0.000 
+// Elapsed time: 25 seconds
+dismissDialog("Reloading"); // bx (cp)
+selectCodeEditor("control.v", 553, 345); // cl (w, cp)
+// Elapsed time: 176 seconds
+selectCodeEditor("control.v", 861, 236); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("control.v", 441, 310); // cl (w, cp)
+// Elapsed time: 220 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), execute_miniRV : execute (execute.v)]", 16, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 5); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v)]", 6); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), execute_miniRV : execute (execute.v)]", 16); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), execute_miniRV : execute (execute.v), ALU_execute : ALU (alu.v)]", 17, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), execute_miniRV : execute (execute.v), ALU_execute : ALU (alu.v)]", 17, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 76 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 4); // k (j, cp)
+// Elapsed time: 166 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Global Include, param.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("param.v", 224, 111); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IMM_sel.v", 7); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 4); // k (j, cp)
+// Elapsed time: 67 seconds
+selectCodeEditor("control.v", 187, 316); // cl (w, cp)
+selectCodeEditor("control.v", 193, 356); // cl (w, cp)
+selectCodeEditor("control.v", 223, 314); // cl (w, cp)
+selectCodeEditor("control.v", 192, 359); // cl (w, cp)
+selectCodeEditor("control.v", 194, 400); // cl (w, cp)
+selectCodeEditor("control.v", 284, 448); // cl (w, cp)
+// Elapsed time: 95 seconds
+selectCodeEditor("control.v", 252, 239); // cl (w, cp)
+selectCodeEditor("control.v", 253, 294); // cl (w, cp)
+selectCodeEditor("control.v", 195, 314); // cl (w, cp)
+selectCodeEditor("control.v", 368, 266); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_START
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2124.988 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [C:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/new/top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2124.988 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2124.988 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2124.988 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem' 
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,205 MB. GUI used memory: 93 MB. Current time: 7/24/21, 7:29:50 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  4484 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,205 MB. GUI used memory: 92 MB. Current time: 7/24/21, 7:29:50 PM CST
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/HP/Desktop/singlecpu3/singlecpu2/SingleCPU.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,205 MB. GUI used memory: 91 MB. Current time: 7/24/21, 7:29:56 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  5503 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2432 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 6 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 2229.082 ; gain = 108.129 
+// Elapsed time: 25 seconds
+dismissDialog("Reloading"); // bx (cp)
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// [GUI Memory]: 175 MB (+207kb) [25:08:09]
+// PAPropertyPanels.initPanels (<const0>) elapsed time: 0.3s
+// Elapsed time: 97 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 4); // k (j, cp)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 0); // k (j, cp)
+floatView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // ax (aI, cp)
+// PAResourceOtoP.PAViews_SCHEMATIC: Schematic: float view
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 3); // k (j, cp)
+floatView(PAResourceOtoP.PAViews_CODE, "control.v"); // ax (aI, cp)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+selectCodeEditor("SEXT.v", 986, 112); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+// Elapsed time: 183 seconds
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 639, 358, 1283, 822, false, false, false, true, false); // f (ax, aK) - Popup Trigger
+// [GUI Memory]: 186 MB (+2480kb) [25:13:18]
+// Elapsed time: 379 seconds
+dockFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // ax (aI, aK)
+// PAResourceOtoP.PAViews_SCHEMATIC: Schematic: dock view
+// Elapsed time: 30 seconds
+dockFrame(PAResourceOtoP.PAViews_CODE, "control.v"); // ax (aI, aK)
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+// [GUI Memory]: 202 MB (+7601kb) [25:20:00]
+// Elapsed time: 487 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "miniRV.v", 1); // k (j, cp)
+// Elapsed time: 335 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 10); // k (j, cp)
+selectCodeEditor("control.v", 754, 343); // cl (w, cp)
+// Elapsed time: 88 seconds
+selectCodeEditor("control.v", 177, 130); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v)]", 7, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.v", 10); // k (j, cp)
+selectCodeEditor("control.v", 269, 260); // cl (w, cp)
+selectCodeEditor("control.v", 311, 368); // cl (w, cp)
+selectCodeEditor("control.v", 226, 337); // cl (w, cp)
+selectCodeEditor("control.v", 396, 329); // cl (w, cp)
+selectCodeEditor("control.v", 291, 338); // cl (w, cp)
+selectCodeEditor("control.v", 142, 86); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,220 MB. GUI used memory: 124 MB. Current time: 7/24/21, 7:59:59 PM CST

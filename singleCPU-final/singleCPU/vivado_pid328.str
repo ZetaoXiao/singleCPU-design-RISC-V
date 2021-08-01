@@ -1,0 +1,125 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 328
+License: Customer
+
+Current time: 	Thu Jul 22 21:20:34 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 8 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/vivado/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/vivado/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	HP
+User home directory: C:/Users/HP
+User working directory: F:/新建文件夹/singlecpu
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/vivado/Vivado
+HDI_APPROOT: D:/vivado/Vivado/2018.3
+RDI_DATADIR: D:/vivado/Vivado/2018.3/data
+RDI_BINDIR: D:/vivado/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/HP/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/HP/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/HP/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/vivado/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/新建文件夹/singlecpu/vivado.log
+Vivado journal file location: 	F:/新建文件夹/singlecpu/vivado.jou
+Engine tmp dir: 	F:/新建文件夹/singlecpu/.Xil/Vivado-328-LAPTOP-DCESA515
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/vivado/Vivado/2018.3
+XILINX_SDK: D:/vivado/SDK/2018.3
+XILINX_VIVADO: D:/vivado/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/vivado/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 578 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: F:\新建文件夹\singlecpu\SingleCPU.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/新建文件夹/singlecpu/SingleCPU.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 600 MB. GUI used memory: 46 MB. Current time: 7/22/21, 9:20:36 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 96 MB (+97761kb) [00:00:24]
+// [Engine Memory]: 646 MB (+525466kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  6415 ms.
+// Tcl Message: open_project F:/新建文件夹/singlecpu/SingleCPU.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Desktop/singlecpu' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:14 . Memory (MB): peak = 688.449 ; gain = 98.723 
+// Project name: SingleCPU; location: F:/新建文件夹/singlecpu; part: xc7a100tfgg484-1
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 686 MB (+8663kb) [00:00:32]
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1950 ms. Increasing delay to 5850 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1362 ms. Increasing delay to 3000 ms.
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (D, cp)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 51 MB. Current time: 7/22/21, 9:20:56 PM CST
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v)]", 5); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), execute_miniRV : execute (execute.v)]", 8); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v)]", 7); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v)]", 6); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), fetch_miniRV : fetch (fetch.v)]", 6); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), compile_miniRV : compile (compile.v)]", 7); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), miniRV_u : miniRV (miniRV.v), execute_miniRV : execute (execute.v)]", 8); // B (D, cp)
+// PAPropertyPanels.initPanels (top.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// [GUI Memory]: 104 MB (+3783kb) [00:00:53]
+// [GUI Memory]: 110 MB (+721kb) [00:00:55]
